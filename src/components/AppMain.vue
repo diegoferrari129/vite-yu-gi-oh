@@ -12,14 +12,18 @@ export default {
     <main>
         <div class="container">
             <div class="row">
-                <CardsList />
+                <div class="bg-main">
+                    <CardsList />
+                </div>
             </div>
         </div>
     </main>
 </template>
 
 <style lang="scss" scoped>
-    main {
+    .bg-main {
+        display: flex;
+        flex-wrap: wrap;
         background-color: white;
     }
     

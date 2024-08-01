@@ -22,8 +22,11 @@ export default {
 </script>
 
 <template>
-    <div class="col-20">
-        
+    <div class="col-20" v-for="card in store.cardsList" :key="card.id">
+        <div class="card">
+            <img :src="card.card_images[0].image_url" :alt="card.name">
+            {{ card.name }}
+        </div>
     </div>
 </template>
 
