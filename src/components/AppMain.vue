@@ -25,6 +25,7 @@ export default {
         display: flex;
         flex-wrap: wrap;
         background-color: white;
+        padding: 40px;
     }
     
 </style>

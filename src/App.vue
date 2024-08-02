@@ -17,7 +17,7 @@ export default {
 <template>
   <div>
     <AppHeader />
-
+    
     <AppMain />
     
   </div>
