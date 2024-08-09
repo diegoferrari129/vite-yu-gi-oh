@@ -22,7 +22,7 @@ export default {
         </div>
         <div class="container">
             <div class="row">
-                <Filter />
+                <Filter @filterByArch="" />
                 <CardsList />
 
             </div>

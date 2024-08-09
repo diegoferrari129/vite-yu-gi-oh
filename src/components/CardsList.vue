@@ -30,6 +30,8 @@ export default {
 </script>
 
 <template>
+
+    
     <div class="bg-card">
 
         <div class="col-20" v-for="card in store.cardsList" :key="card.id">
