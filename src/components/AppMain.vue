@@ -12,20 +12,22 @@ export default {
     <main>
         <div class="container">
             <div class="row">
-                <div class="bg-main">
-                    <CardsList />
+                <div class="col-12">
+
                 </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <CardsList />
+
             </div>
         </div>
     </main>
 </template>
 
 <style lang="scss" scoped>
-    .bg-main {
-        display: flex;
-        flex-wrap: wrap;
-        background-color: white;
-        padding: 40px;
-    }
+
     
 </style>

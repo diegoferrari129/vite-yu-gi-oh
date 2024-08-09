@@ -22,16 +22,27 @@ export default {
 </script>
 
 <template>
-    <div class="col-20" v-for="card in store.cardsList" :key="card.id">
-        <div class="card">
-            <img :src="card.card_images[0].image_url" :alt="card.name">
-            <h6>{{ card.name.toUpperCase() }}</h6>
-            <h5>{{ card.archetype || card.race }}</h5>
+    <div class="bg-card">
+
+        <div class="col-20" v-for="card in store.cardsList" :key="card.id">
+            <div class="card">
+                <img :src="card.card_images[0].image_url" :alt="card.name">
+                <h6>{{ card.name.toUpperCase() }}</h6>
+                <h5>{{ card.archetype || card.race }}</h5>
+            </div>
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
+
+    .bg-card {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: white;
+        padding: 40px 40px 0px 40px;
+    }
+
     .col-20 {
         width: calc(100% / 5);
     }
