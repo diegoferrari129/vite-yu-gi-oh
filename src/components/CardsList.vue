@@ -9,14 +9,22 @@ export default {
         }
     },
     created() {
-        this.getCards()
+        this.getCards(),
+        this.getArch()
     },
     methods: {
         getCards() {
             axios.get(store.api).then((data) => {
                 store.cardsList = data.data.data;
             });
-        }
+        },
+        getArch() {
+            axios.get(store.apiArch).then((response) => {
+                for (let i = 0; i < 10; i++) {
+                    store.arch.push(response.data[i]);
+                }
+            });
+        },
     },
 }
 </script>
