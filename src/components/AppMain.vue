@@ -1,9 +1,12 @@
 <script>
 import CardsList from './CardsList.vue'
+import Filter from './Filter.vue';
+
 
 export default {
     components: {
-        CardsList
+        CardsList,
+        Filter,
     }
 }
 </script>
@@ -19,7 +22,7 @@ export default {
         </div>
         <div class="container">
             <div class="row">
-
+                <Filter />
                 <CardsList />
 
             </div>
